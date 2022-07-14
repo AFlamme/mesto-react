@@ -5,7 +5,7 @@ const PopupWithForm = ({ name, title, isOpen, onClose, children, container, hand
                 <button type="button" className="popup__closed" onClick={onClose}></button>
                 <h2 className="popup__title">{title}</h2>
                 {children}
-                <button className="popup__button" type="submit">Нажми на меня</button>
+                <button className="popup__button" type="submit">{buttonText}</button>
             </form>
         </div>
     )
