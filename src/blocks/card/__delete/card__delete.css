@@ -4,13 +4,12 @@
   right: 15px;
   width: 18px;
   height: 19.3px;
-  background-image: url(../../../images/Trash.svg);
-  background-repeat: no-repeat;
+  background: url(../../../images/Trash.svg) no-repeat;
   outline: none;
   border: none;
   background-color: unset;
-  cursor: pointer;
- 
+  cursor: pointer;  
+  visibility: hidden; 
 }
 
 .card__delete:hover {

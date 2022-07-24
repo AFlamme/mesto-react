@@ -1,5 +1,5 @@
 const PopupWithForm = ({ name, title, isOpen, onClose, children, container, handleSubmit, buttonText }) => {
-    return (
+    return(
         <div className={isOpen ? `popup popup_type_${name} popup_opened` : `popup popup_type_${name}`}>
             <form onSubmit={handleSubmit} name={name} className={container} noValidate>
                 <button type="button" className="popup__closed" onClick={onClose}></button>
@@ -10,6 +10,5 @@ const PopupWithForm = ({ name, title, isOpen, onClose, children, container, hand
         </div>
     )
 }
-export default PopupWithForm
 
-// Название у каждого попапа будет добавлено позже, при подключении JS
+export default PopupWithForm

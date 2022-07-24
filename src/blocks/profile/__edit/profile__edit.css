@@ -1,12 +1,9 @@
 .profile__edit {
-  background-image: url(../../../images/Vector.svg);
+  background: url(../../../images/Vector.svg) no-repeat center;
   box-sizing: border-box;
   border: 1px solid #fff;
   width: 24px;
   height: 24px;
-  background-color: unset;
-  background-repeat: no-repeat;
-  background-position: center;
   outline: none;
   margin-bottom: 7px;
   cursor: pointer;
