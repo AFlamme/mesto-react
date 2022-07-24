@@ -1,15 +1,4 @@
 // Элементы страницы и селекторы
-// Общее
-export const validationConfig = {
-    formSelector: '.popup__form',
-    inputSelector: '.popup__input',
-    submitButtonSelector: '.popup__button',
-    inactiveButtonClass: 'popup__button_disabled',
-    inputErrorClass: 'popup__input_type_error',
-    errorClass: 'popup__error_visible',
-    inputError: '.popup__error'
-}
-
 export const popupProfile = document.querySelector('#popup-profile'); // Поиск формы. 
 export const editButton = document.querySelector('.profile__edit'); // Кнопка редактирования. 
 

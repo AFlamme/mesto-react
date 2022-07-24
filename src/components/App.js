@@ -94,19 +94,29 @@ function App() {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-        <div className="body">
-            <div className="page">
-                <Header />
-                <Main onEditAvatar={handleEditAvatarClick} onEditProfile={handleEditProfileClick} onCardClick={handleCardClick} onCardLike={handleCardLike}
-                       cards={cards} onConfirmPopup={handleConfirmPopupClick} onCardDelete={handleCardDelete} onAddPlace={handleAddPlaceClick} />
-                <Footer />
-            </div>
-            <EditProfilePopup isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} onUpdateUser={handleUpdateUser} />
-            <AddPlacePopup isOpen={isAddPlacePopupOpen}  onClose={closeAllPopups} onAddPlace={handleAddPlace}> </AddPlacePopup>
-            <EditAvatarPopup isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} onUpdateAvatar={handleUpdateAvatar} > </EditAvatarPopup>
-            <PopupWithForm name="sure" title="Вы уверены?" isOpen={isConfirmPopupOpen} container="popup__container popup__form" onClose={closeAllPopups}></PopupWithForm>
-            <ImagePopup onClose={closeAllPopups} card={selectedCard}/>
-        </div>
+    <div className="body">
+      <div className="page">
+        <Header />
+        <Main
+          onEditAvatar={handleEditAvatarClick}
+          onEditProfile={handleEditProfileClick}
+          onCardClick={handleCardClick}
+          onCardLike={handleCardLike}
+          cards={cards}
+          onConfirmPopup={handleConfirmPopupClick}
+          onCardDelete={handleCardDelete}
+          onAddPlace={handleAddPlaceClick}/>
+        <Footer />
+      </div>
+
+      <EditProfilePopup isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} onUpdateUser={handleUpdateUser} />
+      <AddPlacePopup isOpen={isAddPlacePopupOpen}  onClose={closeAllPopups} onAddPlace={handleAddPlace} > </AddPlacePopup>
+      <EditAvatarPopup isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} onUpdateAvatar={handleUpdateAvatar} > </EditAvatarPopup>
+      <PopupWithForm
+        name="sure" title="Вы уверены?" isOpen={isConfirmPopupOpen} container="popup__container popup__form" onClose={closeAllPopups}>
+      </PopupWithForm>
+      <ImagePopup onClose={closeAllPopups} card={selectedCard} />
+    </div>
     </CurrentUserContext.Provider>
   );
 }
